@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Privolio</title>
+  <meta name="description" content="Help with Privolio: imports, scanning, search, reminders, backups, Pro purchases and app lock.">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../assets/icon.png" alt="">Privolio</a>
+      <nav>
+        <a href="../">Overview</a>
+        <a href="./" aria-current="page">Support</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../terms/">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article>
+      <p class="eyebrow">Support</p>
+      <h1>How can we help?</h1>
+      <p class="lede">Privolio has no account and no server, so there is nothing to sign into and nothing to recover. Most questions are answered below.</p>
+
+      <div class="panel" style="margin-top: 34px;">
+        <h2 style="font-size: 26px;">Email us</h2>
+        <p><a href="mailto:info@qshoppro.com" style="color: #f7f3e6;">info@qshoppro.com</a><br>Tell us your device and iOS version, what you expected, and what happened. The version is at the bottom of Settings. Screenshots help. We read everything, though we cannot promise a reply to every message.</p>
+      </div>
+
+      <h2>Getting started</h2>
+
+      <details>
+        <summary>How do I add my first document?</summary>
+        <p>Tap <strong>Add</strong> on Home or Documents. You can scan with the camera, import a PDF or image, or create a record by hand. A record without a file still keeps its dates, notes and reminders.</p>
+      </details>
+
+      <details>
+        <summary>What can I store?</summary>
+        <p>Receipts, invoices, insurance policies, warranties, leases, IDs, medical records, tax papers and anything else you need to keep. Attach a PDF or image, or keep a date-only record for renewals and expiries.</p>
+      </details>
+
+      <details>
+        <summary>Does Privolio work offline?</summary>
+        <p>Yes. Creating records, importing files, scanning, OCR, search, reminders, backup and restore all work without a network connection. The App Store needs a connection only when you load or restore a Pro purchase.</p>
+      </details>
+
+      <h2>Finding things</h2>
+
+      <details>
+        <summary>What does search look for?</summary>
+        <p>Search covers titles, notes, issuers, reference numbers, tags, category names and text recognized from attachments. OCR runs on device and is stored with the document so later searches are fast.</p>
+      </details>
+
+      <details>
+        <summary>Why hasn't my scanned text appeared in search yet?</summary>
+        <p>Recognition runs in the background after an import. Large PDFs can take a little longer. OCR handles up to 40 PDF pages and 200,000 characters per document; text beyond those limits is not indexed.</p>
+      </details>
+
+      <details>
+        <summary>Can I organize documents into categories?</summary>
+        <p>Yes. Every document can have a category, tags and a favorite flag. The built-in categories can be renamed and restyled for free. Creating your own categories requires Privolio Pro.</p>
+      </details>
+
+      <h2>Dates and reminders</h2>
+
+      <details>
+        <summary>How do reminders work?</summary>
+        <p>Add an expiry, renewal, warranty or custom reminder date, then enable a reminder for that document. Privolio asks for notification permission only when you do. Reminders are scheduled locally by iOS — there is no push server.</p>
+      </details>
+
+      <details>
+        <summary>Why didn't I receive a reminder?</summary>
+        <p>Check that notifications are allowed for Privolio in iOS Settings and that the document is active rather than archived. Archived documents keep their dates but do not schedule reminders. Focus modes and notification summaries can also delay delivery.</p>
+      </details>
+
+      <h2>Backups and your data</h2>
+
+      <details>
+        <summary>How do I back up my vault?</summary>
+        <p>Open <strong>Settings → Storage &amp; backup → Export vault backup</strong>. Privolio creates one <code>.privoliovault</code> file containing a manifest, your records, categories and original attachments, with a SHA-256 integrity value. Save it somewhere you trust.</p>
+      </details>
+
+      <details>
+        <summary>Is the backup encrypted?</summary>
+        <p>No. Exported backups are unencrypted, and the app says so before you export. Anyone with the file can read its contents. Store it on a trusted drive or in a service you control.</p>
+      </details>
+
+      <details>
+        <summary>How does restore work?</summary>
+        <p>Choose <strong>Restore from a backup</strong> and select a <code>.privoliovault</code> file. Privolio validates the archive and attachment checksums before adding anything. Restore merges records into your vault and never deletes existing documents. A record with a matching identifier is imported as a new record.</p>
+      </details>
+
+      <details>
+        <summary>Is my vault included in iCloud backup?</summary>
+        <p>No. Privolio excludes its vault from iCloud device backup. A backup exists only when you export one yourself. If you delete the app without exporting, its local data is removed with it.</p>
+      </details>
+
+      <details>
+        <summary>How do I erase everything?</summary>
+        <p>Use <strong>Settings → Privacy &amp; security → Erase all vault data</strong>. This removes the database, attachments, thumbnails and pending reminders and cannot be undone. Exported backup files outside the app are not deleted. Deleting the app also removes its container.</p>
+      </details>
+
+      <h2>Privacy and security</h2>
+
+      <details>
+        <summary>Is anything sent to a server?</summary>
+        <p>No. Privolio has no account system, no analytics SDK, no advertising SDK and no remote AI service. Documents and recognized text stay in the app's private container. See the <a href="../privacy/">privacy policy</a> for the full detail.</p>
+      </details>
+
+      <details>
+        <summary>How does app lock work?</summary>
+        <p>Turn on <strong>Require authentication to open</strong> in Privacy &amp; security. iOS handles Face ID, Touch ID, Optic ID or your device passcode; Privolio never sees biometric data. App lock is an access screen, not an extra layer of file encryption.</p>
+      </details>
+
+      <details>
+        <summary>Why does Privolio ask for camera or photo access?</summary>
+        <p>The camera is used only when you choose to scan a document. Photo access is used only for images you choose to import. You can decline either permission and still import PDFs or create records by hand.</p>
+      </details>
+
+      <h2>Privolio Pro and billing</h2>
+
+      <details>
+        <summary>What is included for free?</summary>
+        <p>The free plan holds up to 15 active documents, with scanning, importing, search, reminders, categories and export. Archived documents do not count toward the limit. Existing documents stay accessible and exportable if Pro ends.</p>
+      </details>
+
+      <details>
+        <summary>What does Pro add?</summary>
+        <p>Unlimited active documents, custom categories with their own symbol and color, and advanced filters. Pro is available as a one-time lifetime purchase or a one-year auto-renewable subscription. Prices are shown in the app before you buy.</p>
+      </details>
+
+      <details>
+        <summary>How do I restore a purchase?</summary>
+        <p>Open the Pro screen and tap <strong>Restore purchases</strong>, using the same Apple Account that bought Pro. If nothing is found, check that the purchase is active in your Apple Account's subscriptions.</p>
+      </details>
+
+      <details>
+        <summary>How do I manage or cancel a subscription?</summary>
+        <p>Open <a href="https://apps.apple.com/account/subscriptions">Apple's subscription settings</a>, or use <strong>Settings → Apple Account → Subscriptions</strong> on your device. Cancelling stops renewal; it does not remove documents you already have.</p>
+      </details>
+
+      <details>
+        <summary>I was charged and need a refund.</summary>
+        <p>Apple processes all payments and refunds. Use <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or contact Apple Support. We cannot issue refunds or see your payment details.</p>
+      </details>
+
+      <h2>Problems</h2>
+
+      <details>
+        <summary>A PDF won't open.</summary>
+        <p>Privolio validates attachments before storing them, but a file can still be unreadable if the original was damaged. The record and its metadata remain available. Try importing the file again from Files.</p>
+      </details>
+
+      <details>
+        <summary>The layout looks wrong on iPad or with large text.</summary>
+        <p>Privolio supports Dynamic Type and iPad layouts. Try rotating the device and reopening the screen. If a label still clips at a specific text size, email us a screenshot and the text size you are using.</p>
+      </details>
+
+      <details>
+        <summary>I need help getting my data out.</summary>
+        <p>You can export a vault backup or a document summary from Settings without contacting us. If the app cannot open its storage, it offers a recovery option that resets local storage — export a backup first if you can still reach the app.</p>
+      </details>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>Privolio — Private Document Vault</span>
+      <span>
+        <a href="./">Support</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../terms/">Terms</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
